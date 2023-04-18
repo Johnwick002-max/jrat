@@ -51,8 +51,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.3
         with:
-         add path:: /opt/hostedtoolcache/node/14.21.3/x64/bin/node --version
-          node-version: 14.x
+         add path:: /opt/hostedtoolcache/node/14.21.3/x64/bin/node --version:14.x
       - name: Install dependencies
         run: |
           npm ci
