@@ -49,7 +49,7 @@ jobs:
           sudo apt-get install --no-install-recommends -y wine32 wine64 gcc-multilib g++-multilib
       - uses: actions/checkout@v2
       - name: Setup Node.js environment
-        uses: actions/setup-node@v1.4.3
+        uses: actions/setup-node@v10.24.1
         with:
          add path:: /opt/hostedtoolcache/node/14.21.3/x64/bin/node --version:14.x
       - name: Install dependencies
