@@ -1,28 +1,18 @@
 {
-    "main": "./app/main.js",
-    "devDependencies": {
-        "electron": "^11.5.0",
-        "electron-builder": "^22.11.7",
-        "electron-packager": "^15.4.0"
-    },
-    "license": "GNU GPLv3",
-    "build": {
-        "appId": "Ahmyth.android.rat",
-        "win": {
-            "publisherName": "AhMyth",
-            "icon": "build/icon.ico"
-        },
-        "asarUnpack": "**/app/Factory/**/*"
-    },
-    "scripts": {
-        "start": "npx electron ./app",
-        "clean": "rm -rf ./dist",
-        "build": "npm run build:linux && npm run build:win",
-        "build:linux": "npm run build:linux32 && npm run build:linux64",
-        "build:linux32": "npx electron-builder --linux deb --ia32",
-        "build:linux64": "npx electron-builder --linux deb --x64",
-        "build:win": "npm run build:win32 && npm run build:win64",
-        "build:win32": "npx electron-builder --win --ia32",
-        "build:win64": "npx electron-builder --win --x64"
+    "name": "AhMyth",
+    "description": "Android Remote Administration Tool",
+    "author": "AhMyth <AhMyth@protonmail.com>",
+    "productName": "AhMyth",
+    "version": "1.0.0",
+    "homepage": "https://github.com/AhMyth/AhMyth-Android-RAT",
+    "main": "main.js",
+    "dependencies": {
+        "angular": "^1.8.3",
+        "angular-route": "^1.8.3",
+        "fomantic-ui": "^2.8.8",
+        "fs-extra": "^11.1.1",
+        "geoip-lite": "^1.4.6",
+        "node-homedir": "^1.1.1",
+        "socket.io": "^2.5.0"
     }
 }
